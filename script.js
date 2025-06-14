@@ -4,25 +4,27 @@ class Person {
 		this.name = name;
 		this.age = age;
 	}
-	getter(){
+	get Name(){
 		return name;
 	}
-	setter(Newage){
-		age = Newage;
+	set Age(Newage){
+		this.Newage = Newage;
 	}
 }
 
 class Student extends Person {
 	study(){
-		console.log(name + 'is studying');
+		console.log(`${this.name} is studying`);
 	}
 }
 
 class Teacher extends Person {
 	teach(){
-		console.log(name + 'is teaching');
+		console.log(`${this.name} is studying`);
 	}
 }
+
+
 
 // Do not change the code below this line
 window.Person = Person;
